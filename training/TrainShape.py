@@ -54,5 +54,5 @@ history = model.fit(
     validation_data=val_generator
 )
 
-model.save("shape_cnn_model_color.h5")
+model.save("model/shape_cnn_model_color.h5")
 print("✅ Đã huấn luyện lại model mới: shape_cnn_model_color.h5")

@@ -59,10 +59,10 @@ improved_model.fit(
 )
 
 # --- 6. Lưu mô hình (định dạng mới nhất) ---
-improved_model.save("mnist_model.keras")
+improved_model.save("model/mnist_model.keras")
 print("✅ Model saved successfully as mnist_model.keras")
 
 # --- 7. Nạp lại mô hình để kiểm tra ---
-reloaded_model = keras.models.load_model("mnist_model.keras")
+reloaded_model = keras.models.load_model("model/mnist_model.keras")
 loss, acc = reloaded_model.evaluate(test_images, test_labels, verbose=0)
 print(f"✅ Reloaded model accuracy: {acc:.4f}")

@@ -37,8 +37,8 @@
 
                 document.getElementById('shapeName').textContent =
                     data.shape === 'circle' ? 'Hình tròn 🟢' : 'Hình chữ nhật ⬜';
-                document.getElementById('confidenceScore').textContent =
-                    `Độ tin cậy: ${(data.confidence * 100).toFixed(2)}%`;
+                // document.getElementById('confidenceScore').textContent =
+                //     `Độ tin cậy: ${(data.confidence * 100).toFixed(2)}%`;
                 document.getElementById('resultLabel').textContent = '✅ Kết quả dự đoán:';
                 document.getElementById('resultBox').style.border = '2px solid #3b82f6';
             } catch (err) {

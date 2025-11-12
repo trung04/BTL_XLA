@@ -76,3 +76,5 @@ class NumberRecognizer:
         label = np.argmax(preds, axis=-1)[0]
         confidence = float(np.max(preds))
         return label, confidence
+# Ví dụ sử dụng:
+# recognizer = NumberRecognizer(model_path='mnist_model.keras')

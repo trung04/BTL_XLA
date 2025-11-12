@@ -7,8 +7,8 @@ import re
 from ShapeRecognizer import ShapeRecognizer  # import class
 from NumberRecognizer import NumberRecognizer  # import class
 app = Flask(__name__)
-model = load_model('mnist_model.keras')
-model2 = load_model('shape_cnn_model_color.h5')
+model = load_model('model/mnist_model.keras')
+model2 = load_model('model/shape_cnn_model_color.h5')
 
 @app.route('/')
 def home():
@@ -52,5 +52,5 @@ def predic2():
         "confidence": confidence
     })
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
