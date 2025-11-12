@@ -1,0 +1,37 @@
+  /* ===== Thanh menu ===== */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 12px rgba(59, 130, 246, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #1d4ed8 !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand span {
+            font-size: 1.3rem;
+        }
+
+        .navbar-brand i {
+            font-size: 1.5rem;
+            margin-right: 8px;
+            color: #3b82f6;
+        }
+
+        .nav-link {
+            color: #334155 !important;
+            font-weight: 500;
+            margin: 0 5px;
+            border-radius: 8px;
+            padding: 6px 12px !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background-color: #eff6ff;
+            color: #1d4ed8 !important;
+        }
